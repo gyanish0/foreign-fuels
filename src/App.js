@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Box } from "@material-ui/core";
+import "./App.css";
+// import Featured from "./Components/Featured";
+import Banner from "./Components/Banner";
+import Ourfe from "./Components/Ourfe";
+import Sale from "./Components/Sale";
+import Upcoming from "./Components/Upcoming";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <Banner />
+      <Ourfe />
+      {/* <Featured /> */}
+      <Upcoming />
+      <Sale />
+    </Box>
   );
 }
 
